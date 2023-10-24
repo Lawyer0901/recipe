@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
-import css from './PageTitle.module.css'
+import { MainTitle } from './PageTitle.styled';
 
 export const PageTitle = ({ text }) => {
-    return <h1 className={css.title}>{ text}</h1>
-}
+  return <MainTitle>{text}</MainTitle>;
+};
 
 PageTitle.prototype = {
-    text:PropTypes.string.isRequired,
-}
+  text: PropTypes.string.isRequired,
+};
